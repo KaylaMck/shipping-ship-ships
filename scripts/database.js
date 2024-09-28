@@ -13,10 +13,10 @@ const database = {
     ]
 }
 
-export const getDocks = () => {
-    return database.docks.map(docks => ({...docks}))
+export const getDocks = () => {                           //using a getter function to retrieve the docks object from the database
+    return database.docks.map(docks => ({...docks}))      //iterating through the database and making a copy of the docks object to export
 }
 
-export const getHaulers = () => {
-    return database.haulers.map(haulers => ({...haulers}))
+export const getHaulers = () => {                           //retrieving the hauler objects from the database
+    return database.haulers.map(haulers => ({...haulers}))     //iterating through the hauler objects and creating a copy to be exported
 }
