@@ -11,7 +11,7 @@ const database = {
         {id: 3, name: "Seawise Giant", dockId: 3},
         {id: 4, name: "Mayweather Mayflower", dockId: 4}
     ],
-    shippingShips: [
+    ships: [
         {id: 1, name: "Esso Atlantic", haulerId: 1},
         {id: 2, name: "Prairial", haulerId: 2},
         {id: 3, name: "Palais Royal", haulerId: 3},
@@ -33,6 +33,6 @@ export const getHaulers = () => {                           //getting the hauler
     return database.haulers.map(haulers => ({...haulers}))     //iterating through the hauler objects and creating a copy to be exported
 }
 
-export const getShippingShips = () => {                                             //using getter function to retrieve the shippingShips object from the database
-    return database.shippingShips.map(shippingShips => ({...shippingShips}))        //iterating through shippingShips object and creating a copy to be exported
+export const getShips = () => {                              //using getter function to retrieve the ships object from the database
+    return database.ships.map(ships => ({...ships}))        //iterating through ships object and creating a copy to be exported
 }
